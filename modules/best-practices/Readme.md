@@ -30,12 +30,12 @@ If you have already read **Clean Code**, perhaps you want to refresh your memory
 
 Some guidelines for making the most of feedback and learning in this part of the NCU include: 
 
-Apply your learnings to a piece of code: for instance you could contribute new code, or find some code  you are not familiar with and look for areas to improve.
-Your colleagues should have easy access to your work: prefer to have your contributions on a hosted repo, for example GitHub or BitBucket. 
-Ensure someone viewing your work can easily understand what you’re trying to achieve: document your goal as part of your work.
-The code should look familiar to your reviewers: ensure you follow Novoda’s style guidelines (see [novoda/styles-guides](https://github.com/novoda/novoda/tree/master/style-guides)).
-Progress should be iterative and well documented: you should issue at least one PR that someone else should review with a [clear commit history](https://chris.beams.io/posts/git-commit/).
-You should share back what you learned: you can pick a format between a Hack & Tell, blog post, kata, or workshop.
+* Apply your learnings to a piece of code: for instance you could contribute new code, or find some code  you are not familiar with and look for areas to improve.
+* Your colleagues should have easy access to your work: prefer to have your contributions on a hosted repo, for example GitHub or BitBucket. 
+* Ensure someone viewing your work can easily understand what you’re trying to achieve: document your goal as part of your work.
+* The code should look familiar to your reviewers: ensure you follow Novoda’s style guidelines (see [novoda/styles-guides](https://github.com/novoda/novoda/tree/master/style-guides)).
+* Progress should be iterative and well documented: you should issue at least one PR that someone else should review with a [clear commit history](https://chris.beams.io/posts/git-commit/).
+* You should share back what you learned: you can pick a format between a Hack & Tell, blog post, kata, or workshop.
 
 Remember, your buddy can always help you with any of the points above.
 
