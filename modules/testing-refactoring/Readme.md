@@ -55,7 +55,7 @@ The following are the ‘check-boxes’ items
 
 ### Testing H&T
 
-Flo Mierzejewski:  
+Florian Mierzejewski:  
 [https://drive.google.com/open?id=1bFUq99OQkM2MV6zE6BrFabdPDEWYJQSgXXNTDl7CPG0]()
 
 Francesco Pontillo:  
@@ -70,7 +70,7 @@ Daniele Conti:
 
 ### Ran a coding Kata
 
-Flo Mierzejewski:  
+Florian Mierzejewski:  
 [https://github.com/novoda/dojos/tree/master/dataMunging]()
 
 Neil Hutchinson:  
