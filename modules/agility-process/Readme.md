@@ -11,7 +11,7 @@ In this module you will learn some tools, processes and methodologies that can h
 
 The most popular strategy to manage a project and its team is the *Agile methodology*. We at Novoda pride ourselves on being agile, meaning that we have the skills and flexibility to adapt to changes in project requirements and resources. Therefore, it is essential that you learn and understand this methodology.
 
-Continuous improvement is about acting and reacting to situations to give value to clients and to get the work done in the most efficient and communicative manner. Agility at the company level is finding the time to work with the client and also finding the time to work with other people at Novoda on open source contributions or improving the company process and group learning.
+But there is more to our process than just using a methodology. Continuously improving how we work and make communication more efficient is also part of what being Agile means.
 
 That’s why we also want you to learn about time management, getting the most out of your calendar application, your email inbox and other tools we use for productivity enhancement at Novoda. Efficient time and communication management will not only help you and your team when working on a project but will allow you to achieve a good work-life balance.
 
