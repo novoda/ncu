@@ -26,9 +26,6 @@ You will once again be asked to read some material on a particular subject - thi
 Graham Allcott
 - *Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers* by Dave Gray, Sunni Brown, James Macanufo
 - *Rolling Rocks Downhill* by Clark Ching
-
-### And read:
-
 - *Scrum: a Breathtakingly Brief and Agile Introduction* by Chris Sims, Hillary Louise Johnson
 
 Finally go over the archive of H&T videos [novoda.tv](https://novoda.tv/#/discovery) and see if there are any previous topics about ‘self improvement’ that you want to read up on, why not check out the Novoda book-club whilst you’re at it.
