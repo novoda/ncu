@@ -5,7 +5,7 @@ Code written for consumer applications (such as mobile apps) is never a static e
 
 That is why we should always write the best code possible. Testing and Refactoring are developers tools that helps us write code with as little bugs as possible. 
 
-In this module we will look into how TDD helps us catch possible bugs before putting code in production and how Refactoring helps us keep a bug free environment while fixing problems, writing features and accounting for design changes. All of that while maintaining the clean code standards you learnt in previous modules.   
+In this module we will look into how TDD helps us catch possible bugs before putting code in production, and how refactoring helps us keep a bug free environment while fixing problems, writing features and accounting for design changes. All of this should be done whilst maintaining good, clean code.   
 
 ## Test-Driven Design (TDD)
 
