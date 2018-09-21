@@ -9,7 +9,9 @@ In this module we will look into how TDD helps us catch possible bugs before put
 
 ## Test-Driven Design (TDD)
 
-> "Test-driven development (TDD)  is an evolutionary approach to development which combines test-first development where you write a test before you write just enough production code to fulfil that test and refactoring.  The goal of TDD is specification and not validation, In other words, it’s a way to think through your requirements or design before your write your functional code" - Agile Data
+> "Test-driven development (TDD) is an evolutionary approach to development which combines test-first development where you write a test before you write just enough production code to fulfil that test and refactoring.  The goal of TDD is specification and not validation, In other words, it’s a way to think through your requirements or design before your write your functional code" - Agile Data
+
+TDD is useful when writing new code, as it allows you to investigate requirements before it is production code. However, refactoring old code is just as important. 
 
 Code refactoring is the art and science of changing your code in a controlled manner making the codebase more resilient against future bugs while also making it more flexible and amenable to future design changes.
 
@@ -27,7 +29,7 @@ Below are some books/resources on TDD and refactoring:
 
 Some guidelines for making the most of feedback and learning in this part of the NCU include: 
 
-- Apply your learnings to a piece of code: for instance you could contribute new code, or find some code  you are not familiar with and look for areas to improve.
+- Apply your learnings to a piece of code: for instance you could contribute new code, or find some code you are not familiar with and look for areas to improve.
 - Your colleagues should have easy access to your work: prefer to have your project on a hosted repo, for example Github or BitBucket. 
 - Ensure someone viewing your project can easily understand what you’re trying to achieve: document your goal as part of your work
 - The code should look familiar to your reviewers: ensure you follow Novoda’s style guidelines (see [https://github.com/novoda/novoda/tree/master/style-guides]()).
