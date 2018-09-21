@@ -41,12 +41,12 @@ Finally go over the archive of H&T videos [novoda.tv](https://novoda.tv/#/discov
 4. You should share back to the team some of your learnings about continuous improvement as H&T or blogpost
 
 ## Progress Log
-[ ] Read Scrum: a Breathtakingly Brief and Agile Introduction (it’s only 20 pages!)
+- [ ] Read Scrum: a Breathtakingly Brief and Agile Introduction (it’s only 20 pages!)
 
-[ ] Been involved in a retrospective
+- [ ] Been involved in a retrospective
 
-[ ] Co-facilitate a workshop on agility/continuous improvement
+- [ ] Co-facilitate a workshop on agility/continuous improvement
 
-[ ] Improved communication overhead by email and slack notifications
+- [ ] Improved communication overhead by email and slack notifications
 
-[ ] Share back to the team what you learned
+- [ ] Share back to the team what you learned
