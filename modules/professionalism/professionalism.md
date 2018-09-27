@@ -12,7 +12,7 @@ This module aims to help you build your professional behaviour and communication
 
 Professionalism and communication in software development is a wide topic. Below we have listed several different books covering the area that have helped Novoda employees over the course of their careers. Talk to your buddy/mentor about your choice of book as some books cover a different range of ideas or come at the idea of improving professionalism / communication from a different angle and you need to find one that suits and interests you. Feel free to read the others in your own time.
 
-The benefits to both Novoda and you are clear: by becoming a better professional, you’ll be more effective in your communication allowing you to fulfill your potential and create high-quality software products for you and our clients.
+There are huge benefits to finishing this module. More effective communication makes you a better professional. You’ll be more able you to fulfil your potential and create high-quality software products for you and our clients.
 
 *The Software Craftsman* by Sandro Mancuso  
 *The Clean Coder* by Robert C Martin  
