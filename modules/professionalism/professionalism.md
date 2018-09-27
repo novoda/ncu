@@ -40,7 +40,15 @@ Working at Novoda we have a lot of practices that require excellent communicatio
 #### Giving constructive feedback on pull requests  
 
 It’s easy to fall into bad habits when reviewing pull requests. Avoid overly abrupt or negative comments like “That’s wrong”, “Don’t do that”, “Why would you do that?”, “No”. Consider whether that accurately reflects the tone of voice you are intending to portray and how that might feel to the person receiving the feedback.   
-Instead, try to explain what you see as the problem with the code, why this might be an issue and provide an alternative solution. Adding links to StackOverflow answers, blog posts or articles are a great way to support your comments and provide more useful feedback. Another productive method of giving feedback is to pose it as a question, or at least think of it in that context first. For example, rather than saying “This class is badly designed”, consider the point as “Does the composition of this class adequately reflect the single responsibility principle?” Once you have considered the point in this way, it may help you to write your comment in a more objective light.  
+Instead, try to explain what you see as the problem with the code, why this might be an issue and provide an alternative solution. Adding links to StackOverflow answers, blog posts or articles are a great way to support your comments and provide more useful feedback. Another productive method of giving feedback is to pose it as a question, or at least think of it in that context first. For example, instead of saying this
+
+> This class is badly designed
+
+think about talking about why you think it's badly designed. That could lead to a commment more like
+
+> Does the composition of this class adequately reflect the single responsibility principle?” 
+
+Once you have considered the point in this way, it may help you to write your comment in a more objective light.  
 It can also be very productive to pair with the person who made the pull request to explain things in more detail, especially if you have a better understanding of the techniques you are explaining than they do.
 
 It’s also always worth keeping in mind two things:
