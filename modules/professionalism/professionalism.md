@@ -24,7 +24,7 @@ There are huge benefits to finishing this module. More effective communication m
 The activities you’ll need to finish in order to complete this module are:
 
 * Read one of the literature selection  
-* Organise a roleplay workshop to prove skills  
+* Organise a roleplay / team building workshop to hone your skills  
 * Give a H&T presenting on one idea of professionalism or communication  
 
 Within the books, there are many skills and ideas for behaviour. We want you to run a session where you get participants to roleplay different personas, in order for a skill to be explained and for practice of how you should react. The session can have 2 or 22 participants it is up to you. This is a very flexible task and the main goal is for you to put some of your learning about behaviour and communication into practice in a safe environment. If you have other ideas of how to do this, discuss them with your buddy/mentor and make it happen.
