@@ -44,11 +44,11 @@ Instead, try to explain what you see as the problem with the code, why this migh
 
 > This class is badly designed
 
-think about talking about why you think it's badly designed. That could lead to a commment more like
+you could consider the reasons you think it's badly designed. That could lead to a commment more like
 
 > Does the composition of this class adequately reflect the single responsibility principle?
 
-Once you have considered the point in this way, it may help you to write your comment in a more objective light.  
+Reflecting on your ideas in this way can help you write your comment in a more objective light.  
 It can also be very productive to pair with the person who made the pull request to explain things in more detail, especially if you have a better understanding of the techniques you are explaining than they do.
 
 It’s also always worth keeping in mind two things:
