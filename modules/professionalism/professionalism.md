@@ -4,7 +4,7 @@
 
 Clients will generally have greater knowledge of their brand, target market and domain, while we are likely to have a higher level of expertise in the platform and ecosystem they want to target. To deliver the best end result, we need to harness all of that knowledge and work effectively as a cross-company team. This requires constant communication on the client’s needs, internal demands, potential solutions and trade-offs. Communication is hard. 
 
-As a software crafter you will have developed your knowledge of coding, testing, SDKs and platform specifics. In addition, we expect you to give effective explanations, use appropriate language for the audience you’re addressing and present written and spoken communications in a positive manner to clients and colleagues. It’s important that you can discuss technical problems together, understand other people's points of view and contribute constructively to meetings.
+As a software crafter you will have developed your knowledge of coding, testing, SDKs and platform specifics. Building on that, we will help you to give effective explanations, use appropriate language for the audience you’re addressing and present written and spoken communications in a positive manner to clients and colleagues. It’s important that you can discuss technical problems together, understand other people's points of view and contribute constructively to meetings.
 
 This module aims to help you build your professional behaviour and communication skills in each of these areas in order to achieve and maintain the level of professionalism that is expected of you at Novoda. 
 
