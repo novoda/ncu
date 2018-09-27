@@ -10,7 +10,7 @@ This module aims to help you build your professional behaviour and communication
 
 ### I. Literature on professionalism
 
-Professionalism and communication in software development is a wide topic. Below we have listed several different books covering the area. Talk to your buddy/mentor about your choice of book as some books cover a different range of ideas or come at the idea of improving professionalism / communication from a different angle and you need to find one that suits and interests you. Feel free to read the others in your own time.
+Professionalism and communication in software development is a wide topic. Below we have listed several different books covering the area that have helped Novoda employees over the course of their careers. Talk to your buddy/mentor about your choice of book as some books cover a different range of ideas or come at the idea of improving professionalism / communication from a different angle and you need to find one that suits and interests you. Feel free to read the others in your own time.
 
 The benefits to both Novoda and you are clear: by becoming a better professional, you’ll be more effective in your communication allowing you to fulfill your potential and create high-quality software products for you and our clients.
 
