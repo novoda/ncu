@@ -71,9 +71,9 @@ We should always strive to achieve a client’s goals, which sometimes involves 
 It’s easy to respond with “No” when you hear something that you don’t agree with, but it’s always worth taking a few seconds to reflect on who is speaking, the role that person is fulfilling, what they really want and how we can help them achieve it. Then start your response with a “Yes”.
     
 Considering the above points, please complete this task:  
-Reflect on your own behaviour and think of scenarios where one or more of the above may have arisen
-Try to be mindful of the situation around you, try to categories the scenario and recognise how you can change your behaviour to improve the conversation 
-Write a blog post or give a H&T showing the importance of one of the above skills
+[ ] Reflect on your own behaviour. Think of scenarios where one or more of the above may have arisen
+[ ] Be mindful of the situation around you. Try to categorise the scenario and recognise how you can change your behaviour to improve the conversation 
+[ ] Write a blog post or give a H&T showing the importance of one of the above skills
     
 ### Module 5 Progress Log
 
