@@ -8,7 +8,10 @@ target 'NCU-iOS' do
   # Pods for NCU-iOS
 
   pod 'GoogleSignIn'
-
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  
   target 'NCU-iOSTests' do
     inherit! :search_paths
     # Pods for testing
