@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  NCU-iOS
+//  NCU
 //
 //  Created by Simon Rowlands on 09/11/2018.
 //  Copyright © 2018 simonrowlands. All rights reserved.

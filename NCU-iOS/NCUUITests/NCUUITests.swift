@@ -1,6 +1,6 @@
 //
-//  NCU_iOSUITests.swift
-//  NCU-iOSUITests
+//  NCUUITests.swift
+//  NCUUITests
 //
 //  Created by Simon Rowlands on 09/11/2018.
 //  Copyright © 2018 simonrowlands. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class NCU_iOSUITests: XCTestCase {
+class NCUUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

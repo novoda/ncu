@@ -15,8 +15,8 @@
 		F42F3EE52195D1DF0034A1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42F3EE32195D1DF0034A1A8 /* Main.storyboard */; };
 		F42F3EE72195D1E00034A1A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42F3EE62195D1E00034A1A8 /* Assets.xcassets */; };
 		F42F3EEA2195D1E00034A1A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42F3EE82195D1E00034A1A8 /* LaunchScreen.storyboard */; };
-		F42F3EF52195D1E00034A1A8 /* NCU_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EF42195D1E00034A1A8 /* NCU_iOSTests.swift */; };
-		F42F3F002195D1E10034A1A8 /* NCU_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EFF2195D1E10034A1A8 /* NCU_iOSUITests.swift */; };
+		F42F3EF52195D1E00034A1A8 /* NCUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EF42195D1E00034A1A8 /* NCUTests.swift */; };
+		F42F3F002195D1E10034A1A8 /* NCUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EFF2195D1E10034A1A8 /* NCUUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,18 +45,18 @@
 		929D2959D4488021134FD734 /* Pods_NCU_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCU_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1C7D9D3CDC66C97ED22682 /* Pods-NCU-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCU-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCU-iOS/Pods-NCU-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E4278C7953833EBA66206C8D /* Pods-NCU-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCU-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCU-iOSUITests/Pods-NCU-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F42F3EDC2195D1DF0034A1A8 /* NCU-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NCU-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42F3EDC2195D1DF0034A1A8 /* NCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F3EDF2195D1DF0034A1A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F42F3EE12195D1DF0034A1A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F42F3EE42195D1DF0034A1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F42F3EE62195D1E00034A1A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F42F3EE92195D1E00034A1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F42F3EEB2195D1E00034A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F42F3EF02195D1E00034A1A8 /* NCU-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCU-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F42F3EF42195D1E00034A1A8 /* NCU_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCU_iOSTests.swift; sourceTree = "<group>"; };
+		F42F3EF02195D1E00034A1A8 /* NCUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42F3EF42195D1E00034A1A8 /* NCUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCUTests.swift; sourceTree = "<group>"; };
 		F42F3EF62195D1E00034A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F42F3EFB2195D1E10034A1A8 /* NCU-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCU-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F42F3EFF2195D1E10034A1A8 /* NCU_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCU_iOSUITests.swift; sourceTree = "<group>"; };
+		F42F3EFB2195D1E10034A1A8 /* NCUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42F3EFF2195D1E10034A1A8 /* NCUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCUUITests.swift; sourceTree = "<group>"; };
 		F42F3F012195D1E10034A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB41570D793928A8F3F64748 /* Pods_NCU_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCU_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,9 +115,9 @@
 		F42F3ED32195D1DF0034A1A8 = {
 			isa = PBXGroup;
 			children = (
-				F42F3EDE2195D1DF0034A1A8 /* NCU-iOS */,
-				F42F3EF32195D1E00034A1A8 /* NCU-iOSTests */,
-				F42F3EFE2195D1E10034A1A8 /* NCU-iOSUITests */,
+				F42F3EDE2195D1DF0034A1A8 /* NCU */,
+				F42F3EF32195D1E00034A1A8 /* NCUTests */,
+				F42F3EFE2195D1E10034A1A8 /* NCUUITests */,
 				F42F3EDD2195D1DF0034A1A8 /* Products */,
 				614C9E91C28D37C49AE54611 /* Pods */,
 				AD14C534AC72504E7283681F /* Frameworks */,
@@ -127,14 +127,14 @@
 		F42F3EDD2195D1DF0034A1A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F42F3EDC2195D1DF0034A1A8 /* NCU-iOS.app */,
-				F42F3EF02195D1E00034A1A8 /* NCU-iOSTests.xctest */,
-				F42F3EFB2195D1E10034A1A8 /* NCU-iOSUITests.xctest */,
+				F42F3EDC2195D1DF0034A1A8 /* NCU.app */,
+				F42F3EF02195D1E00034A1A8 /* NCUTests.xctest */,
+				F42F3EFB2195D1E10034A1A8 /* NCUUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F42F3EDE2195D1DF0034A1A8 /* NCU-iOS */ = {
+		F42F3EDE2195D1DF0034A1A8 /* NCU */ = {
 			isa = PBXGroup;
 			children = (
 				F42F3EDF2195D1DF0034A1A8 /* AppDelegate.swift */,
@@ -144,33 +144,33 @@
 				F42F3EE82195D1E00034A1A8 /* LaunchScreen.storyboard */,
 				F42F3EEB2195D1E00034A1A8 /* Info.plist */,
 			);
-			path = "NCU-iOS";
+			path = NCU;
 			sourceTree = "<group>";
 		};
-		F42F3EF32195D1E00034A1A8 /* NCU-iOSTests */ = {
+		F42F3EF32195D1E00034A1A8 /* NCUTests */ = {
 			isa = PBXGroup;
 			children = (
-				F42F3EF42195D1E00034A1A8 /* NCU_iOSTests.swift */,
+				F42F3EF42195D1E00034A1A8 /* NCUTests.swift */,
 				F42F3EF62195D1E00034A1A8 /* Info.plist */,
 			);
-			path = "NCU-iOSTests";
+			path = NCUTests;
 			sourceTree = "<group>";
 		};
-		F42F3EFE2195D1E10034A1A8 /* NCU-iOSUITests */ = {
+		F42F3EFE2195D1E10034A1A8 /* NCUUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F42F3EFF2195D1E10034A1A8 /* NCU_iOSUITests.swift */,
+				F42F3EFF2195D1E10034A1A8 /* NCUUITests.swift */,
 				F42F3F012195D1E10034A1A8 /* Info.plist */,
 			);
-			path = "NCU-iOSUITests";
+			path = NCUUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F42F3EDB2195D1DF0034A1A8 /* NCU-iOS */ = {
+		F42F3EDB2195D1DF0034A1A8 /* NCU */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F42F3F042195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU-iOS" */;
+			buildConfigurationList = F42F3F042195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU" */;
 			buildPhases = (
 				9B85C3A802A0A490F508EFB2 /* [CP] Check Pods Manifest.lock */,
 				F42F3ED82195D1DF0034A1A8 /* Sources */,
@@ -183,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = "NCU-iOS";
+			name = NCU;
 			productName = "NCU-iOS";
-			productReference = F42F3EDC2195D1DF0034A1A8 /* NCU-iOS.app */;
+			productReference = F42F3EDC2195D1DF0034A1A8 /* NCU.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F42F3EEF2195D1E00034A1A8 /* NCU-iOSTests */ = {
+		F42F3EEF2195D1E00034A1A8 /* NCUTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F42F3F072195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU-iOSTests" */;
+			buildConfigurationList = F42F3F072195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCUTests" */;
 			buildPhases = (
 				4E07E41633FA47171C8EE78C /* [CP] Check Pods Manifest.lock */,
 				F42F3EEC2195D1E00034A1A8 /* Sources */,
@@ -202,14 +202,14 @@
 			dependencies = (
 				F42F3EF22195D1E00034A1A8 /* PBXTargetDependency */,
 			);
-			name = "NCU-iOSTests";
+			name = NCUTests;
 			productName = "NCU-iOSTests";
-			productReference = F42F3EF02195D1E00034A1A8 /* NCU-iOSTests.xctest */;
+			productReference = F42F3EF02195D1E00034A1A8 /* NCUTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F42F3EFA2195D1E10034A1A8 /* NCU-iOSUITests */ = {
+		F42F3EFA2195D1E10034A1A8 /* NCUUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F42F3F0A2195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU-iOSUITests" */;
+			buildConfigurationList = F42F3F0A2195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCUUITests" */;
 			buildPhases = (
 				C770B2BDD8DF6CAD60046F33 /* [CP] Check Pods Manifest.lock */,
 				F42F3EF72195D1E10034A1A8 /* Sources */,
@@ -221,9 +221,9 @@
 			dependencies = (
 				F42F3EFD2195D1E10034A1A8 /* PBXTargetDependency */,
 			);
-			name = "NCU-iOSUITests";
+			name = NCUUITests;
 			productName = "NCU-iOSUITests";
-			productReference = F42F3EFB2195D1E10034A1A8 /* NCU-iOSUITests.xctest */;
+			productReference = F42F3EFB2195D1E10034A1A8 /* NCUUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F42F3ED72195D1DF0034A1A8 /* Build configuration list for PBXProject "NCU-iOS" */;
+			buildConfigurationList = F42F3ED72195D1DF0034A1A8 /* Build configuration list for PBXProject "NCU" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -262,9 +262,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F42F3EDB2195D1DF0034A1A8 /* NCU-iOS */,
-				F42F3EEF2195D1E00034A1A8 /* NCU-iOSTests */,
-				F42F3EFA2195D1E10034A1A8 /* NCU-iOSUITests */,
+				F42F3EDB2195D1DF0034A1A8 /* NCU */,
+				F42F3EEF2195D1E00034A1A8 /* NCUTests */,
+				F42F3EFA2195D1E10034A1A8 /* NCUUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -433,7 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42F3EF52195D1E00034A1A8 /* NCU_iOSTests.swift in Sources */,
+				F42F3EF52195D1E00034A1A8 /* NCUTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42F3F002195D1E10034A1A8 /* NCU_iOSUITests.swift in Sources */,
+				F42F3F002195D1E10034A1A8 /* NCUUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,12 +450,12 @@
 /* Begin PBXTargetDependency section */
 		F42F3EF22195D1E00034A1A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F42F3EDB2195D1DF0034A1A8 /* NCU-iOS */;
+			target = F42F3EDB2195D1DF0034A1A8 /* NCU */;
 			targetProxy = F42F3EF12195D1E00034A1A8 /* PBXContainerItemProxy */;
 		};
 		F42F3EFD2195D1E10034A1A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F42F3EDB2195D1DF0034A1A8 /* NCU-iOS */;
+			target = F42F3EDB2195D1DF0034A1A8 /* NCU */;
 			targetProxy = F42F3EFC2195D1E10034A1A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -602,13 +602,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87FJ4JFSM4;
-				INFOPLIST_FILE = "NCU-iOS/Info.plist";
+				DEVELOPMENT_TEAM = 6344MVRY42;
+				INFOPLIST_FILE = "$(SRCROOT)/NCU/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.simonrowlands.NCU-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novoda.ncu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -621,13 +621,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 87FJ4JFSM4;
-				INFOPLIST_FILE = "NCU-iOS/Info.plist";
+				DEVELOPMENT_TEAM = 6344MVRY42;
+				INFOPLIST_FILE = "$(SRCROOT)/NCU/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.simonrowlands.NCU-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.novoda.ncu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,7 +652,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCU-iOS.app/NCU-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCU.app/NCU";
 			};
 			name = Debug;
 		};
@@ -674,7 +674,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCU-iOS.app/NCU-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCU.app/NCU";
 			};
 			name = Release;
 		};
@@ -723,7 +723,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F42F3ED72195D1DF0034A1A8 /* Build configuration list for PBXProject "NCU-iOS" */ = {
+		F42F3ED72195D1DF0034A1A8 /* Build configuration list for PBXProject "NCU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F42F3F022195D1E10034A1A8 /* Debug */,
@@ -732,7 +732,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F42F3F042195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU-iOS" */ = {
+		F42F3F042195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F42F3F052195D1E10034A1A8 /* Debug */,
@@ -741,7 +741,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F42F3F072195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU-iOSTests" */ = {
+		F42F3F072195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCUTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F42F3F082195D1E10034A1A8 /* Debug */,
@@ -750,7 +750,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F42F3F0A2195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCU-iOSUITests" */ = {
+		F42F3F0A2195D1E10034A1A8 /* Build configuration list for PBXNativeTarget "NCUUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F42F3F0B2195D1E10034A1A8 /* Debug */,

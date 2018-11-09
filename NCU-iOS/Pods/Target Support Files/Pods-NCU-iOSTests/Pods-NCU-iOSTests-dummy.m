@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_NCU_iOSTests : NSObject
+@interface PodsDummy_Pods_NCUTests : NSObject
 @end
-@implementation PodsDummy_Pods_NCU_iOSTests
+@implementation PodsDummy_Pods_NCUTests
 @end

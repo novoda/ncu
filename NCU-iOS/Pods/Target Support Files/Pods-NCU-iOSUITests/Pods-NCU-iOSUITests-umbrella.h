@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_NCU_iOSUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_NCU_iOSUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_NCUUITestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_NCUUITestsVersionString[];
 

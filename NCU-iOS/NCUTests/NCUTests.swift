@@ -1,15 +1,15 @@
 //
-//  NCU_iOSTests.swift
-//  NCU-iOSTests
+//  NCUTests.swift
+//  NCUTests
 //
 //  Created by Simon Rowlands on 09/11/2018.
 //  Copyright © 2018 simonrowlands. All rights reserved.
 //
 
 import XCTest
-@testable import NCU_iOS
+@testable import NCU
 
-class NCU_iOSTests: XCTestCase {
+class NCUTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

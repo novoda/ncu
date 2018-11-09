@@ -1,5 +1,5 @@
-framework module Pods_NCU_iOS {
-  umbrella header "Pods-NCU-iOS-umbrella.h"
+framework module Pods_NCU {
+  umbrella header "Pods-NCU-umbrella.h"
 
   export *
   module * { export * }

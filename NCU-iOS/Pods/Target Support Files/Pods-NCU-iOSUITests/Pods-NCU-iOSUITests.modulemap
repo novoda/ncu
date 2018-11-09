@@ -1,5 +1,5 @@
-framework module Pods_NCU_iOSUITests {
-  umbrella header "Pods-NCU-iOSUITests-umbrella.h"
+framework module Pods_NCUUITests {
+  umbrella header "Pods-NCUUITests-umbrella.h"
 
   export *
   module * { export * }
