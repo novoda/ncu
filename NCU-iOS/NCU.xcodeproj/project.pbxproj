@@ -10,13 +10,22 @@
 		699472610A9D678B013F22DA /* Pods_NCU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA4DE814112216AA2532B89 /* Pods_NCU.framework */; };
 		914FA1B1AFA5DCBDFFCB99B0 /* Pods_NCUTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DBA16F9A475810EC95687C /* Pods_NCUTests.framework */; };
 		EB81FA89F4A7E24EB354CB5F /* Pods_NCUUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B632186111AA539D08D0C4C /* Pods_NCUUITests.framework */; };
+		F4103C8E2199996F00C9AE7F /* Subviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4103C8D2199996F00C9AE7F /* Subviewable.swift */; };
+		F4103C9121999D7000C9AE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4103C8F21999D7000C9AE7F /* LaunchScreen.storyboard */; };
 		F42F3EE02195D1DF0034A1A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EDF2195D1DF0034A1A8 /* AppDelegate.swift */; };
-		F42F3EE22195D1DF0034A1A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EE12195D1DF0034A1A8 /* ViewController.swift */; };
-		F42F3EE52195D1DF0034A1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42F3EE32195D1DF0034A1A8 /* Main.storyboard */; };
+		F42F3EE22195D1DF0034A1A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EE12195D1DF0034A1A8 /* LoginViewController.swift */; };
 		F42F3EE72195D1E00034A1A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42F3EE62195D1E00034A1A8 /* Assets.xcassets */; };
-		F42F3EEA2195D1E00034A1A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42F3EE82195D1E00034A1A8 /* LaunchScreen.storyboard */; };
 		F42F3EF52195D1E00034A1A8 /* NCUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EF42195D1E00034A1A8 /* NCUTests.swift */; };
 		F42F3F002195D1E10034A1A8 /* NCUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F3EFF2195D1E10034A1A8 /* NCUUITests.swift */; };
+		F469891C2199EEDB0080232F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469891B2199EEDB0080232F /* WelcomeViewController.swift */; };
+		F4698924219ADD580080232F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4698923219ADD580080232F /* UILabelExtension.swift */; };
+		F4698926219AF4B30080232F /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4698925219AF4B30080232F /* UITextViewExtension.swift */; };
+		F4698928219B0FA00080232F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4698927219B0FA00080232F /* User.swift */; };
+		F469892B219B11550080232F /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469892A219B11550080232F /* Office.swift */; };
+		F469892E219B16C50080232F /* OfficeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469892D219B16C50080232F /* OfficeSelectViewController.swift */; };
+		F4729A49219B36E2006F47EE /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A48219B36E2006F47EE /* StringExtension.swift */; };
+		F4729A4B219B3C7B006F47EE /* CraftSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A4A219B3C7B006F47EE /* CraftSelectViewController.swift */; };
+		F4729A4E219B3CD7006F47EE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A4D219B3CD7006F47EE /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +53,12 @@
 		AB0E6F4403130594F52B6818 /* Pods-NCUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCUUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCUUITests/Pods-NCUUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F07D529D6792B0866A6FFFC8 /* Pods-NCUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCUTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCUTests/Pods-NCUTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F29B02B6A075540FE6DA5745 /* Pods-NCUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCUTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCUTests/Pods-NCUTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4103C8D2199996F00C9AE7F /* Subviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Subviewable.swift; path = "../../../../ncu/NCU-iOS/NCU/Common/Subviewable.swift"; sourceTree = "<group>"; };
+		F4103C9021999D7000C9AE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../ncu/NCU-iOS/NCU/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		F42F3EDC2195D1DF0034A1A8 /* NCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F3EDF2195D1DF0034A1A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F42F3EE12195D1DF0034A1A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F42F3EE42195D1DF0034A1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F42F3EE12195D1DF0034A1A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F42F3EE62195D1E00034A1A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F42F3EE92195D1E00034A1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F42F3EEB2195D1E00034A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42F3EF02195D1E00034A1A8 /* NCUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F3EF42195D1E00034A1A8 /* NCUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCUTests.swift; sourceTree = "<group>"; };
@@ -57,6 +66,15 @@
 		F42F3EFB2195D1E10034A1A8 /* NCUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F3EFF2195D1E10034A1A8 /* NCUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCUUITests.swift; sourceTree = "<group>"; };
 		F42F3F012195D1E10034A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F469891B2199EEDB0080232F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F4698923219ADD580080232F /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UILabelExtension.swift; path = "../../../../ncu/NCU-iOS/NCU/Extensions/UILabelExtension.swift"; sourceTree = "<group>"; };
+		F4698925219AF4B30080232F /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextViewExtension.swift; path = "../../../../ncu/NCU-iOS/NCU/Extensions/UITextViewExtension.swift"; sourceTree = "<group>"; };
+		F4698927219B0FA00080232F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F469892A219B11550080232F /* Office.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Office.swift; path = "../../../../ncu/NCU-iOS/NCU/Model/Office.swift"; sourceTree = "<group>"; };
+		F469892D219B16C50080232F /* OfficeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfficeSelectViewController.swift; path = "../../../../ncu/NCU-iOS/NCU/Onboarding/OfficeSelectViewController.swift"; sourceTree = "<group>"; };
+		F4729A48219B36E2006F47EE /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = "../../../../ncu/NCU-iOS/NCU/Extensions/StringExtension.swift"; sourceTree = "<group>"; };
+		F4729A4A219B3C7B006F47EE /* CraftSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CraftSelectViewController.swift; path = "../../../../ncu/NCU-iOS/NCU/Onboarding/CraftSelectViewController.swift"; sourceTree = "<group>"; };
+		F4729A4D219B3CD7006F47EE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = "../../../../ncu/NCU-iOS/NCU/Splash/SplashViewController.swift"; sourceTree = "<group>"; };
 		FCA4DE814112216AA2532B89 /* Pods_NCU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9EC5A4672B4032735E5286 /* Pods-NCU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCU.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCU/Pods-NCU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +130,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F4103C8C2199996400C9AE7F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4103C8D2199996F00C9AE7F /* Subviewable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		F42F3ED32195D1DF0034A1A8 = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +164,14 @@
 			isa = PBXGroup;
 			children = (
 				F42F3EDF2195D1DF0034A1A8 /* AppDelegate.swift */,
-				F42F3EE12195D1DF0034A1A8 /* ViewController.swift */,
-				F42F3EE32195D1DF0034A1A8 /* Main.storyboard */,
-				F42F3EE62195D1E00034A1A8 /* Assets.xcassets */,
-				F42F3EE82195D1E00034A1A8 /* LaunchScreen.storyboard */,
-				F42F3EEB2195D1E00034A1A8 /* Info.plist */,
+				F4729A4C219B3CC6006F47EE /* Splash */,
+				F469891D2199EEDE0080232F /* Login */,
+				F469892C219B168F0080232F /* Onboarding */,
+				F469891E2199EEE40080232F /* Welcome */,
+				F4103C8C2199996400C9AE7F /* Common */,
+				F4698929219B0FA50080232F /* Model */,
+				F4698922219ADD430080232F /* Extensions */,
+				F469891F2199EEF30080232F /* Supporting Files */,
 			);
 			path = NCU;
 			sourceTree = "<group>";
@@ -163,6 +192,68 @@
 				F42F3F012195D1E10034A1A8 /* Info.plist */,
 			);
 			path = NCUUITests;
+			sourceTree = "<group>";
+		};
+		F469891D2199EEDE0080232F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F42F3EE12195D1DF0034A1A8 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F469891E2199EEE40080232F /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F469891B2199EEDB0080232F /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F469891F2199EEF30080232F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4103C8F21999D7000C9AE7F /* LaunchScreen.storyboard */,
+				F42F3EE62195D1E00034A1A8 /* Assets.xcassets */,
+				F42F3EEB2195D1E00034A1A8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4698922219ADD430080232F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4698923219ADD580080232F /* UILabelExtension.swift */,
+				F4698925219AF4B30080232F /* UITextViewExtension.swift */,
+				F4729A48219B36E2006F47EE /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4698929219B0FA50080232F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4698927219B0FA00080232F /* User.swift */,
+				F469892A219B11550080232F /* Office.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F469892C219B168F0080232F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F469892D219B16C50080232F /* OfficeSelectViewController.swift */,
+				F4729A4A219B3C7B006F47EE /* CraftSelectViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F4729A4C219B3CC6006F47EE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F4729A4D219B3CD7006F47EE /* SplashViewController.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42F3EEA2195D1E00034A1A8 /* LaunchScreen.storyboard in Resources */,
+				F4103C9121999D7000C9AE7F /* LaunchScreen.storyboard in Resources */,
 				F42F3EE72195D1E00034A1A8 /* Assets.xcassets in Resources */,
-				F42F3EE52195D1DF0034A1A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +440,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NCU/Pods-NCU-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -361,6 +452,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -424,8 +516,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42F3EE22195D1DF0034A1A8 /* ViewController.swift in Sources */,
+				F4698928219B0FA00080232F /* User.swift in Sources */,
+				F4729A4B219B3C7B006F47EE /* CraftSelectViewController.swift in Sources */,
+				F42F3EE22195D1DF0034A1A8 /* LoginViewController.swift in Sources */,
+				F4729A4E219B3CD7006F47EE /* SplashViewController.swift in Sources */,
+				F4729A49219B36E2006F47EE /* StringExtension.swift in Sources */,
+				F469892E219B16C50080232F /* OfficeSelectViewController.swift in Sources */,
+				F469891C2199EEDB0080232F /* WelcomeViewController.swift in Sources */,
+				F469892B219B11550080232F /* Office.swift in Sources */,
 				F42F3EE02195D1DF0034A1A8 /* AppDelegate.swift in Sources */,
+				F4698926219AF4B30080232F /* UITextViewExtension.swift in Sources */,
+				F4698924219ADD580080232F /* UILabelExtension.swift in Sources */,
+				F4103C8E2199996F00C9AE7F /* Subviewable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,18 +563,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F42F3EE32195D1DF0034A1A8 /* Main.storyboard */ = {
+		F4103C8F21999D7000C9AE7F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F42F3EE42195D1DF0034A1A8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F42F3EE82195D1E00034A1A8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F42F3EE92195D1E00034A1A8 /* Base */,
+				F4103C9021999D7000C9AE7F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -603,7 +697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6344MVRY42;
-				INFOPLIST_FILE = "$(SRCROOT)/NCU/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NCU/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,7 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6344MVRY42;
-				INFOPLIST_FILE = "$(SRCROOT)/NCU/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NCU/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
