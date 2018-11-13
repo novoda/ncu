@@ -1,4 +1,5 @@
 PODS:
+  - Cartography (3.1.0)
   - GoogleSignIn (4.3.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -26,12 +27,14 @@ PODS:
     - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
+  - Cartography
   - GoogleSignIn
   - RxCocoa
   - RxSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cartography
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMOAuth2
@@ -41,6 +44,7 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
+  Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
   GoogleSignIn: 11183592dc63e105475c7305a325045ff95e02b7
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
@@ -49,6 +53,6 @@ SPEC CHECKSUMS:
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: d708dfadf29e89dd01eefb6e05cdf7a41478be95
+PODFILE CHECKSUM: a2e9c4e50bd1fc221f35c2791c2c53fef4e8ce87
 
 COCOAPODS: 1.5.3
