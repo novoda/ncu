@@ -8,13 +8,9 @@
 
 import Foundation
 
-enum Office: String, CaseIterable, Decodable, Encodable { // Will be based on downloaded data? Hardcoded?
-    case barcelona
-    case berlin
-    case london
-    case liverpool
-    
-    var readable: String {
-        return self.rawValue.capitalizingFirstLetter()
-    }
+enum Office: String, CaseIterable, Decodable, Encodable { // Available on hibob?
+    case barcelona = "Barcelona"
+    case berlin = "Berlin"
+    case london = "London"
+    case liverpool = "Liverpool"
 }

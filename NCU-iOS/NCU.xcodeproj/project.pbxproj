@@ -23,9 +23,12 @@
 		F4698928219B0FA00080232F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4698927219B0FA00080232F /* User.swift */; };
 		F469892B219B11550080232F /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469892A219B11550080232F /* Office.swift */; };
 		F469892E219B16C50080232F /* OfficeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469892D219B16C50080232F /* OfficeSelectViewController.swift */; };
-		F4729A49219B36E2006F47EE /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A48219B36E2006F47EE /* StringExtension.swift */; };
 		F4729A4B219B3C7B006F47EE /* CraftSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A4A219B3C7B006F47EE /* CraftSelectViewController.swift */; };
 		F4729A4E219B3CD7006F47EE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A4D219B3CD7006F47EE /* SplashViewController.swift */; };
+		F4729A51219C2A6C006F47EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A50219C2A6C006F47EE /* HomeViewController.swift */; };
+		F4729A53219C2CE2006F47EE /* Craft.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A52219C2CE2006F47EE /* Craft.swift */; };
+		F4729A55219C2E42006F47EE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A54219C2E42006F47EE /* OnboardingViewController.swift */; };
+		F4729A5A219C6056006F47EE /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A59219C6056006F47EE /* NetworkingAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,10 +74,13 @@
 		F4698925219AF4B30080232F /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextViewExtension.swift; path = "../../../../ncu/NCU-iOS/NCU/Extensions/UITextViewExtension.swift"; sourceTree = "<group>"; };
 		F4698927219B0FA00080232F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F469892A219B11550080232F /* Office.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Office.swift; path = "../../../../ncu/NCU-iOS/NCU/Model/Office.swift"; sourceTree = "<group>"; };
-		F469892D219B16C50080232F /* OfficeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfficeSelectViewController.swift; path = "../../../../ncu/NCU-iOS/NCU/Onboarding/OfficeSelectViewController.swift"; sourceTree = "<group>"; };
-		F4729A48219B36E2006F47EE /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = "../../../../ncu/NCU-iOS/NCU/Extensions/StringExtension.swift"; sourceTree = "<group>"; };
-		F4729A4A219B3C7B006F47EE /* CraftSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CraftSelectViewController.swift; path = "../../../../ncu/NCU-iOS/NCU/Onboarding/CraftSelectViewController.swift"; sourceTree = "<group>"; };
-		F4729A4D219B3CD7006F47EE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = "../../../../ncu/NCU-iOS/NCU/Splash/SplashViewController.swift"; sourceTree = "<group>"; };
+		F469892D219B16C50080232F /* OfficeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfficeSelectViewController.swift; path = "../../../../../ncu/NCU-iOS/NCU/ViewControllers/Onboarding/OfficeSelectViewController.swift"; sourceTree = "<group>"; };
+		F4729A4A219B3C7B006F47EE /* CraftSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CraftSelectViewController.swift; path = "../../../../../ncu/NCU-iOS/NCU/ViewControllers/Onboarding/CraftSelectViewController.swift"; sourceTree = "<group>"; };
+		F4729A4D219B3CD7006F47EE /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = "../../../../../ncu/NCU-iOS/NCU/ViewControllers/Splash/SplashViewController.swift"; sourceTree = "<group>"; };
+		F4729A50219C2A6C006F47EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "../../../../../ncu/NCU-iOS/NCU/ViewControllers/Home/HomeViewController.swift"; sourceTree = "<group>"; };
+		F4729A52219C2CE2006F47EE /* Craft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Craft.swift; path = "../../../../ncu/NCU-iOS/NCU/Model/Craft.swift"; sourceTree = "<group>"; };
+		F4729A54219C2E42006F47EE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		F4729A59219C6056006F47EE /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkingAPI.swift; path = "../../../../ncu/NCU-iOS/NCU/API/NetworkingAPI.swift"; sourceTree = "<group>"; };
 		FCA4DE814112216AA2532B89 /* Pods_NCU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9EC5A4672B4032735E5286 /* Pods-NCU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCU.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCU/Pods-NCU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +139,7 @@
 		F4103C8C2199996400C9AE7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F4729A56219C3EED006F47EE /* Superclass */,
 				F4103C8D2199996F00C9AE7F /* Subviewable.swift */,
 			);
 			path = Common;
@@ -164,10 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				F42F3EDF2195D1DF0034A1A8 /* AppDelegate.swift */,
-				F4729A4C219B3CC6006F47EE /* Splash */,
-				F469891D2199EEDE0080232F /* Login */,
-				F469892C219B168F0080232F /* Onboarding */,
-				F469891E2199EEE40080232F /* Welcome */,
+				F4729A57219C6031006F47EE /* ViewControllers */,
+				F4729A58219C6045006F47EE /* API */,
 				F4103C8C2199996400C9AE7F /* Common */,
 				F4698929219B0FA50080232F /* Model */,
 				F4698922219ADD430080232F /* Extensions */,
@@ -225,7 +230,6 @@
 			children = (
 				F4698923219ADD580080232F /* UILabelExtension.swift */,
 				F4698925219AF4B30080232F /* UITextViewExtension.swift */,
-				F4729A48219B36E2006F47EE /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,6 +239,7 @@
 			children = (
 				F4698927219B0FA00080232F /* User.swift */,
 				F469892A219B11550080232F /* Office.swift */,
+				F4729A52219C2CE2006F47EE /* Craft.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +259,42 @@
 				F4729A4D219B3CD7006F47EE /* SplashViewController.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		F4729A4F219C2A61006F47EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F4729A50219C2A6C006F47EE /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F4729A56219C3EED006F47EE /* Superclass */ = {
+			isa = PBXGroup;
+			children = (
+				F4729A54219C2E42006F47EE /* OnboardingViewController.swift */,
+			);
+			path = Superclass;
+			sourceTree = "<group>";
+		};
+		F4729A57219C6031006F47EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4729A4C219B3CC6006F47EE /* Splash */,
+				F469891D2199EEDE0080232F /* Login */,
+				F469892C219B168F0080232F /* Onboarding */,
+				F469891E2199EEE40080232F /* Welcome */,
+				F4729A4F219C2A61006F47EE /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4729A58219C6045006F47EE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F4729A59219C6056006F47EE /* NetworkingAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -520,13 +561,16 @@
 				F4729A4B219B3C7B006F47EE /* CraftSelectViewController.swift in Sources */,
 				F42F3EE22195D1DF0034A1A8 /* LoginViewController.swift in Sources */,
 				F4729A4E219B3CD7006F47EE /* SplashViewController.swift in Sources */,
-				F4729A49219B36E2006F47EE /* StringExtension.swift in Sources */,
 				F469892E219B16C50080232F /* OfficeSelectViewController.swift in Sources */,
 				F469891C2199EEDB0080232F /* WelcomeViewController.swift in Sources */,
 				F469892B219B11550080232F /* Office.swift in Sources */,
+				F4729A53219C2CE2006F47EE /* Craft.swift in Sources */,
 				F42F3EE02195D1DF0034A1A8 /* AppDelegate.swift in Sources */,
 				F4698926219AF4B30080232F /* UITextViewExtension.swift in Sources */,
+				F4729A5A219C6056006F47EE /* NetworkingAPI.swift in Sources */,
 				F4698924219ADD580080232F /* UILabelExtension.swift in Sources */,
+				F4729A55219C2E42006F47EE /* OnboardingViewController.swift in Sources */,
+				F4729A51219C2A6C006F47EE /* HomeViewController.swift in Sources */,
 				F4103C8E2199996F00C9AE7F /* Subviewable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

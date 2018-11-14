@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        window?.rootViewController = LoginViewController()
+        window?.rootViewController = SplashViewController()
         window?.makeKeyAndVisible()
         
         return true
@@ -41,30 +41,51 @@ extension AppDelegate: GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print("Failed to sign in : \(error.localizedDescription)")
-        } else {
-            
-            // Needs to validate that this is a valid novoda email?
-            // Is this purely .contains("@novoda.com")?
-            
-            guard user.profile.email.contains("@novoda.com") else {
-                GIDSignIn.sharedInstance()?.signOut()
-                
-                let alertController = UIAlertController(title: "Error", message: "You are not using a valid Novoda account", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Ok", style: .default))
-                
-                window?.rootViewController?.present(alertController, animated: true)
+        
+        guard error == nil else {
+            window?.rootViewController = LoginViewController()
+            return
+        }
+        
+        let newUser = User.create(from: user)
+        newUser.store()
+        
+        if window?.rootViewController as? SplashViewController != nil || window?.rootViewController as? LoginViewController != nil {
+            if newUser.hasSeenOnboarding() {
+                window?.rootViewController = HomeViewController()
+                return
+            } else {
+                let navigationController = UINavigationController(rootViewController: OfficeSelectViewController())
+                navigationController.setNavigationBarHidden(true, animated: false)
+                window?.rootViewController = navigationController
                 return
             }
-            
-            User.create(from: user).store()
-            
-            let officeSelectViewController = OfficeSelectViewController()
-            window?.rootViewController = officeSelectViewController
-//            let welcomeViewController = WelcomeViewController()
-//            window?.rootViewController = welcomeViewController
         }
+        
+//        if let error = error {
+//            print("Failed to sign in : \(error.localizedDescription)")
+//        } else {
+//
+//            // Needs to validate that this is a valid novoda email/account?
+//            // Is this purely .contains("@novoda.com")?
+//
+//            guard user.profile.email.contains("@novoda.com") else {
+//                GIDSignIn.sharedInstance()?.signOut()
+//
+//                let alertController = UIAlertController(title: "Error", message: "You are not using a valid Novoda account", preferredStyle: .alert)
+//                alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+//
+//                window?.rootViewController?.present(alertController, animated: true)
+//                return
+//            }
+//
+//            User.create(from: user).store()
+//
+//            let officeSelectViewController = OfficeSelectViewController()
+//            window?.rootViewController = officeSelectViewController
+////            let welcomeViewController = WelcomeViewController()
+////            window?.rootViewController = welcomeViewController
+//        }
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,

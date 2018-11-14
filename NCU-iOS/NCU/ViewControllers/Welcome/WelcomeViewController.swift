@@ -14,6 +14,8 @@ final class WelcomeViewController: UIViewController {
     
     private let profileImageView = UIImageView(image: UIImage(named: "userPlaceholder"))
     private let titleLabel = UILabel()
+    private let craftLabel = UILabel()
+    private let officeLabel = UILabel()
     private let textView = UITextView()
     private let continueButton = UIButton(type: .custom)
     
@@ -64,34 +66,48 @@ extension WelcomeViewController: Subviewable {
     func setupHierarchy() {
         view.addSubview(profileImageView)
         view.addSubview(titleLabel)
+        view.addSubview(craftLabel)
+        view.addSubview(officeLabel)
         view.addSubview(textView)
         view.addSubview(continueButton)
     }
     
     func setupAutoLayout() {
-        constrain(profileImageView, titleLabel, view) { imageView, label, view in
+        constrain(profileImageView, titleLabel, view) { imageView, titleLabel, view in
             imageView.top == view.safeAreaLayoutGuide.topMargin + 20
             imageView.width == imageView.height
             imageView.centerX == view.centerX
             imageView.height == view.height * 0.1
-            imageView.bottom == label.top - 12
+            imageView.bottom == titleLabel.top - 12
         }
-        constrain(titleLabel, textView, view) { label, textView, view in
-            label.left >= view.safeAreaLayoutGuide.leftMargin + 20
-            label.right >= view.safeAreaLayoutGuide.rightMargin - 20
-            label.centerX == view.centerX
-            label.bottom == textView.top - 12
+        constrain(titleLabel, craftLabel, view) { titleLabel, craftLabel, view in
+            titleLabel.left >= view.safeAreaLayoutGuide.leftMargin + 20
+            titleLabel.right >= view.safeAreaLayoutGuide.rightMargin - 20
+            titleLabel.centerX == view.centerX
+            titleLabel.bottom == craftLabel.top - 12
+        }
+        constrain(craftLabel, officeLabel, view) { craftLabel, officeLabel, view in
+            craftLabel.left >= view.safeAreaLayoutGuide.leftMargin + 20
+            craftLabel.right >= view.safeAreaLayoutGuide.rightMargin - 20
+            craftLabel.centerX == view.centerX
+            craftLabel.bottom == officeLabel.top
+        }
+        constrain(officeLabel, textView, view) { officeLabel, textView, view in
+            officeLabel.left >= view.safeAreaLayoutGuide.leftMargin + 20
+            officeLabel.right >= view.safeAreaLayoutGuide.rightMargin - 20
+            officeLabel.centerX == view.centerX
+            officeLabel.bottom == textView.top - 12
         }
         constrain(textView, continueButton, view) { textView, button, view in
             textView.left == view.safeAreaLayoutGuide.leftMargin + 12
             textView.right == view.safeAreaLayoutGuide.rightMargin - 12
             textView.bottom == button.top + 12
         }
-        constrain(continueButton, view) { button, view in
-            button.left == view.leftMargin
-            button.right == view.rightMargin
-            button.bottom == view.safeAreaLayoutGuide.bottomMargin - 20
-            button.height == 50
+        constrain(continueButton, view) { continueButton, view in
+            continueButton.left == view.leftMargin
+            continueButton.right == view.rightMargin
+            continueButton.bottom == view.safeAreaLayoutGuide.bottomMargin - 20
+            continueButton.height == 50
         }
     }
 }

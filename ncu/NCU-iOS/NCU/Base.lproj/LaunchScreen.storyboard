@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,53 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rs6-zM-TiU">
+                                <rect key="frame" x="93.666666666666686" y="312.33333333333331" width="187.66666666666663" height="187.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rs6-zM-TiU" secondAttribute="height" multiplier="1:1" id="PpB-JW-htK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rs6-zM-TiU" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.5" id="1VT-tR-4M8"/>
+                            <constraint firstItem="rs6-zM-TiU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Nds-om-ke4"/>
+                            <constraint firstItem="rs6-zM-TiU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XbB-YC-2tH"/>
+                            <constraint firstItem="rs6-zM-TiU" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="ed1-oP-QtZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1VT-tR-4M8"/>
+                                <exclude reference="ed1-oP-QtZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="1VT-tR-4M8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="1VT-tR-4M8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ed1-oP-QtZ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="appLogo" width="426" height="390"/>
+    </resources>
 </document>

@@ -38,9 +38,18 @@ final class User: Codable {
         }
     }
     
+    func setHasSeenOnboarding(seen: Bool = true) {
+        UserDefaults.standard.set(seen, forKey: "hasSeenOnboarding")
+    }
+    
+    func hasSeenOnboarding() -> Bool { // Should probably be somewhere else
+        return UserDefaults.standard.bool(forKey: userID + "hasSeenOnboarding")
+    }
+    
     static func get() -> User? {
         
         guard let userData = UserDefaults.standard.value(forKey: "userData") as? Data else {
+            debugPrint("Failed to retrieve User from UserDefaults")
             return nil
         }
         

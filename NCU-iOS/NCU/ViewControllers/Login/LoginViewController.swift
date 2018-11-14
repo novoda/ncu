@@ -10,9 +10,7 @@ import UIKit
 
 import RxSwift
 import RxCocoa
-
 import GoogleSignIn
-
 import Cartography
 
 final class LoginViewController: UIViewController, GIDSignInUIDelegate {
@@ -26,7 +24,6 @@ final class LoginViewController: UIViewController, GIDSignInUIDelegate {
         view.backgroundColor = .white
         
         GIDSignIn.sharedInstance()?.uiDelegate = self
-        GIDSignIn.sharedInstance()?.signInSilently() // Needs a pre-login splash screen to avoid showing this if already logged in
         
         setup()
     }
