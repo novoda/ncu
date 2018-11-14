@@ -43,7 +43,7 @@ extension AppDelegate: GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
         guard error == nil else {
-            window?.rootViewController = LoginViewController()
+            transitionWithFade(to: LoginViewController())
             return
         }
         
@@ -51,24 +51,19 @@ extension AppDelegate: GIDSignInDelegate {
         newUser.store()
         
         if window?.rootViewController as? SplashViewController != nil || window?.rootViewController as? LoginViewController != nil {
-            if newUser.hasSeenOnboarding() {
-                window?.rootViewController = HomeViewController()
+            if newUser.hasSeenOnboarding {
+                transitionWithFade(to: HomeViewController())
                 return
             } else {
                 let navigationController = UINavigationController(rootViewController: OfficeSelectViewController())
                 navigationController.setNavigationBarHidden(true, animated: false)
-                window?.rootViewController = navigationController
+                transitionWithFade(to: navigationController)
                 return
             }
         }
         
-//        if let error = error {
-//            print("Failed to sign in : \(error.localizedDescription)")
-//        } else {
-//
 //            // Needs to validate that this is a valid novoda email/account?
-//            // Is this purely .contains("@novoda.com")?
-//
+              // Is this via novoda domain check or is this hibob account exists check?
 //            guard user.profile.email.contains("@novoda.com") else {
 //                GIDSignIn.sharedInstance()?.signOut()
 //
@@ -78,18 +73,16 @@ extension AppDelegate: GIDSignInDelegate {
 //                window?.rootViewController?.present(alertController, animated: true)
 //                return
 //            }
-//
-//            User.create(from: user).store()
-//
-//            let officeSelectViewController = OfficeSelectViewController()
-//            window?.rootViewController = officeSelectViewController
-////            let welcomeViewController = WelcomeViewController()
-////            window?.rootViewController = welcomeViewController
-//        }
     }
     
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
-              withError error: Error!) {
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         print("Did disconnect user : \(error.localizedDescription)")
+    }
+    
+    func transitionWithFade(to viewController: UIViewController) {
+        guard let window = window else { return }
+        UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+            self.window?.rootViewController = viewController
+        }, completion: nil)
     }
 }

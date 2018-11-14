@@ -41,7 +41,7 @@ class CraftSelectViewController: OnboardingViewController {
     }
     
     func selectedCraft() {
-        User.get()?.setHasSeenOnboarding()
+        User.get()?.hasSeenOnboarding = true
         navigationController?.pushViewController(HomeViewController(), animated: true)
     }
     

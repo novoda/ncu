@@ -19,6 +19,8 @@ final class HomeViewController: UIViewController {
         
         view.backgroundColor = .white
         
+        setup()
+        
         if let user = User.get() {
             welcomeLabel.text = "\(user.givenName)'s Journey"
         }
@@ -31,7 +33,7 @@ extension HomeViewController: Subviewable {
     }
     
     func setupStyles() {
-        
+        welcomeLabel.style(with: .title1, alignment: .center)
     }
     
     func setupHierarchy() {

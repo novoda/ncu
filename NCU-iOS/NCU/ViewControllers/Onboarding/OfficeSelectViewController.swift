@@ -12,7 +12,7 @@ import Cartography
 import RxSwift
 import RxCocoa
 
-final class OfficeSelectViewController: OnboardingViewController {
+final class OfficeSelectViewController: OnboardingViewController { // Should be part of a pageViewController maybe?
     
     private let remoteWorkerButton = UIButton()
     

@@ -19,6 +19,15 @@ final class User: Codable {
     let email: String
     var office: Office?
     
+    var hasSeenOnboarding: Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: userID + "_hasSeenOnboarding")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: userID + "_hasSeenOnboarding")
+        }
+    }
+    
     init(userID: String, idToken: String, fullName: String, givenName: String, familyName: String, email: String, office: Office? = nil) {
         self.userID = userID
         self.idToken = idToken
@@ -38,14 +47,6 @@ final class User: Codable {
         }
     }
     
-    func setHasSeenOnboarding(seen: Bool = true) {
-        UserDefaults.standard.set(seen, forKey: "hasSeenOnboarding")
-    }
-    
-    func hasSeenOnboarding() -> Bool { // Should probably be somewhere else
-        return UserDefaults.standard.bool(forKey: userID + "hasSeenOnboarding")
-    }
-    
     static func get() -> User? {
         
         guard let userData = UserDefaults.standard.value(forKey: "userData") as? Data else {
@@ -63,15 +64,7 @@ final class User: Codable {
 }
 
 extension User {
-    
     static func create(from googleUser: GIDGoogleUser) -> User {
         return User(userID: googleUser.userID, idToken: googleUser.authentication.idToken, fullName: googleUser.profile.name, givenName: googleUser.profile.givenName, familyName: googleUser.profile.familyName, email: googleUser.profile.email)
     }
-    
-//    static func get() -> User? {
-//        guard let googleUser = GIDSignIn.sharedInstance()?.currentUser else {
-//            return nil
-//        }
-//        return User.create(from: googleUser)
-//    }
 }
