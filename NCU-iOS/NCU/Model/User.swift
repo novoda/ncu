@@ -17,7 +17,24 @@ final class User: Codable {
     let givenName: String
     let familyName: String
     let email: String
-    var office: Office?
+    
+    var office: Office? { // Temporary
+        get {
+            return UserDefaultsStore.retrieve(from: userID + "_office")
+        }
+        set {
+            UserDefaultsStore.store(encodableData: newValue, to: userID + "_office")
+        }
+    }
+    
+    var craft: Craft? { // Temporary
+        get {
+            return UserDefaultsStore.retrieve(from: userID + "_craft")
+        }
+        set {
+            UserDefaultsStore.store(encodableData: newValue, to: userID + "_craft")
+        }
+    }
     
     var hasSeenOnboarding: Bool {
         get {

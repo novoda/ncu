@@ -29,6 +29,7 @@
 		F4729A53219C2CE2006F47EE /* Craft.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A52219C2CE2006F47EE /* Craft.swift */; };
 		F4729A55219C2E42006F47EE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A54219C2E42006F47EE /* OnboardingViewController.swift */; };
 		F4729A5A219C6056006F47EE /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A59219C6056006F47EE /* NetworkingAPI.swift */; };
+		F4729A5E219C846D006F47EE /* UserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4729A5D219C846D006F47EE /* UserDefaultsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,7 @@
 		AB0E6F4403130594F52B6818 /* Pods-NCUUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCUUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCUUITests/Pods-NCUUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F07D529D6792B0866A6FFFC8 /* Pods-NCUTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCUTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCUTests/Pods-NCUTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F29B02B6A075540FE6DA5745 /* Pods-NCUTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCUTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCUTests/Pods-NCUTests.release.xcconfig"; sourceTree = "<group>"; };
-		F4103C8D2199996F00C9AE7F /* Subviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Subviewable.swift; path = "../../../../ncu/NCU-iOS/NCU/Common/Subviewable.swift"; sourceTree = "<group>"; };
+		F4103C8D2199996F00C9AE7F /* Subviewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subviewable.swift; sourceTree = "<group>"; };
 		F4103C9021999D7000C9AE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../ncu/NCU-iOS/NCU/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		F42F3EDC2195D1DF0034A1A8 /* NCU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42F3EDF2195D1DF0034A1A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		F4729A52219C2CE2006F47EE /* Craft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Craft.swift; path = "../../../../ncu/NCU-iOS/NCU/Model/Craft.swift"; sourceTree = "<group>"; };
 		F4729A54219C2E42006F47EE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F4729A59219C6056006F47EE /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkingAPI.swift; path = "../../../../ncu/NCU-iOS/NCU/API/NetworkingAPI.swift"; sourceTree = "<group>"; };
+		F4729A5D219C846D006F47EE /* UserDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsStore.swift; path = "../../../../../ncu/NCU-iOS/NCU/Common/Convenience/UserDefaultsStore.swift"; sourceTree = "<group>"; };
 		FCA4DE814112216AA2532B89 /* Pods_NCU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9EC5A4672B4032735E5286 /* Pods-NCU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCU.release.xcconfig"; path = "Pods/Target Support Files/Pods-NCU/Pods-NCU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,8 +141,9 @@
 		F4103C8C2199996400C9AE7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F4729A5B219C8439006F47EE /* Protocol */,
 				F4729A56219C3EED006F47EE /* Superclass */,
-				F4103C8D2199996F00C9AE7F /* Subviewable.swift */,
+				F4729A5C219C844E006F47EE /* Convenience */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -295,6 +298,22 @@
 				F4729A59219C6056006F47EE /* NetworkingAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		F4729A5B219C8439006F47EE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F4103C8D2199996F00C9AE7F /* Subviewable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F4729A5C219C844E006F47EE /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				F4729A5D219C846D006F47EE /* UserDefaultsStore.swift */,
+			);
+			path = Convenience;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +582,7 @@
 				F4729A4E219B3CD7006F47EE /* SplashViewController.swift in Sources */,
 				F469892E219B16C50080232F /* OfficeSelectViewController.swift in Sources */,
 				F469891C2199EEDB0080232F /* WelcomeViewController.swift in Sources */,
+				F4729A5E219C846D006F47EE /* UserDefaultsStore.swift in Sources */,
 				F469892B219B11550080232F /* Office.swift in Sources */,
 				F4729A53219C2CE2006F47EE /* Craft.swift in Sources */,
 				F42F3EE02195D1DF0034A1A8 /* AppDelegate.swift in Sources */,
