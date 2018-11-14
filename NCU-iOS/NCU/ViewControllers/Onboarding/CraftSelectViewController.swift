@@ -42,7 +42,9 @@ class CraftSelectViewController: OnboardingViewController {
     
     func selectedCraft() {
         User.get()?.hasSeenOnboarding = true
-        navigationController?.pushViewController(HomeViewController(), animated: true)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.setRootWithFade(to: HomeViewController())
     }
     
     override func setupSubviews() {

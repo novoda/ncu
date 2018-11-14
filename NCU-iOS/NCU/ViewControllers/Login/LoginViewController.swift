@@ -16,6 +16,7 @@ import Cartography
 final class LoginViewController: UIViewController, GIDSignInUIDelegate {
     private let loginButton = GIDSignInButton()
     private let titleLabel = UILabel()
+    private let logoImageView = UIImageView(image: UIImage(named: "appLogo"))
     private let novodaTitleLabel = UILabel() // To be replaced by image
     
     override func viewDidLoad() {
@@ -34,8 +35,14 @@ extension LoginViewController: Subviewable {
         loginButton.layer.cornerRadius = 8
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         
+        logoImageView.contentMode = .scaleAspectFit
+        
         novodaTitleLabel.text = "novoda"
         titleLabel.text = "Craftmanship University"
+        
+        titleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
+        novodaTitleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
+        logoImageView.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
     }
     
     func setupStyles() {
@@ -44,29 +51,38 @@ extension LoginViewController: Subviewable {
     }
     
     func setupHierarchy() {
-        view.addSubview(loginButton)
-        view.addSubview(titleLabel)
+        view.addSubview(logoImageView)
         view.addSubview(novodaTitleLabel)
+        view.addSubview(titleLabel)
+        view.addSubview(loginButton)
     }
     
     func setupAutoLayout() {
-        constrain(loginButton, view) { button, view in
-            button.centerY == view.centerY + 50
-            button.rightMargin == view.rightMargin - 30
-            button.leftMargin == view.leftMargin + 30
-            button.height >= 60
-        }
-        constrain(titleLabel, loginButton, view) { label, button, view in
-            label.rightMargin == view.rightMargin - 30
-            label.leftMargin == view.leftMargin + 30
-            label.height >= 30
-            label.bottom == button.top - 50
+        constrain(logoImageView, novodaTitleLabel, view) { logoImageView, novodaTitleLabel, view in
+            logoImageView.right <= view.safeAreaLayoutGuide.rightMargin - 30
+            logoImageView.left >= view.safeAreaLayoutGuide.leftMargin + 30
+            logoImageView.height == logoImageView.width
+            logoImageView.centerX == view.centerX
+            logoImageView.top == view.safeAreaLayoutGuide.topMargin + 20
+            logoImageView.bottom <= novodaTitleLabel.top - 20
         }
         constrain(novodaTitleLabel, titleLabel, view) { novodaTitle, title, view in
-            novodaTitle.rightMargin == view.rightMargin - 30
-            novodaTitle.leftMargin == view.leftMargin + 30
-            novodaTitle.top >= view.top + 20
+            novodaTitle.right == view.safeAreaLayoutGuide.rightMargin - 30
+            novodaTitle.left == view.safeAreaLayoutGuide.leftMargin + 30
+            novodaTitle.height >= 30
             novodaTitle.bottom == title.top - 50
+        }
+        constrain(titleLabel, loginButton, view) { titleLabel, loginButton, view in
+            titleLabel.right == view.safeAreaLayoutGuide.rightMargin - 30
+            titleLabel.left == view.safeAreaLayoutGuide.leftMargin + 30
+            titleLabel.height >= 30
+            titleLabel.bottom == loginButton.top - 50
+        }
+        constrain(loginButton, view) { loginButton, view in
+            loginButton.centerY == view.centerY + 100
+            loginButton.right == view.safeAreaLayoutGuide.rightMargin - 30
+            loginButton.left == view.safeAreaLayoutGuide.leftMargin + 30
+            loginButton.height >= 60
         }
     }
 }

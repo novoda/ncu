@@ -34,6 +34,11 @@ extension AppDelegate: GIDSignInDelegate {
         GIDSignIn.sharedInstance()?.delegate = self
     }
     
+    func logoutGID() {
+        GIDSignIn.sharedInstance()?.signOut()
+        setRootWithFade(to: LoginViewController())
+    }
+    
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url as URL?,
                                                  sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
@@ -43,21 +48,21 @@ extension AppDelegate: GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
         guard error == nil else {
-            transitionWithFade(to: LoginViewController())
+            setRootWithFade(to: LoginViewController())
             return
         }
         
         let newUser = User.create(from: user)
-        newUser.store()
+        newUser.store() // This is overriding any other stored property (outside of what google returns) - needs changing
         
         if window?.rootViewController as? SplashViewController != nil || window?.rootViewController as? LoginViewController != nil {
             if newUser.hasSeenOnboarding {
-                transitionWithFade(to: HomeViewController())
+                setRootWithFade(to: HomeViewController())
                 return
             } else {
                 let navigationController = UINavigationController(rootViewController: OfficeSelectViewController())
                 navigationController.setNavigationBarHidden(true, animated: false)
-                transitionWithFade(to: navigationController)
+                setRootWithFade(to: navigationController)
                 return
             }
         }
@@ -79,7 +84,7 @@ extension AppDelegate: GIDSignInDelegate {
         print("Did disconnect user : \(error.localizedDescription)")
     }
     
-    func transitionWithFade(to viewController: UIViewController) {
+    func setRootWithFade(to viewController: UIViewController) {
         guard let window = window else { return }
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
             self.window?.rootViewController = viewController
