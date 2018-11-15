@@ -9,6 +9,8 @@
 import UIKit
 
 import Cartography
+import RxSwift
+import RxCocoa
 
 final class WelcomeViewController: UIViewController {
     
@@ -19,6 +21,8 @@ final class WelcomeViewController: UIViewController {
     private let textView = UITextView()
     private let continueButton = UIButton(type: .custom)
     
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,9 +30,20 @@ final class WelcomeViewController: UIViewController {
         
         setup()
         
-        if let userName = User.get()?.givenName {
-            titleLabel.text = "Welcome \(userName)!"
+        if let user = User.get() {
+            titleLabel.text = "Welcome \(user.givenName)!"
+            
+            craftLabel.text = user.crafts.map { $0.rawValue }.joined(separator: ", ")
+            
+            officeLabel.text = "\(user.office?.rawValue ?? "")"
         }
+        
+        continueButton.rx.tap
+            .subscribe(onNext: { _ in
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.setRootWithFade(to: HomeViewController())
+                User.get()?.hasSeenOnboarding = true
+            }).disposed(by: disposeBag)
     }
 }
 
@@ -49,6 +64,8 @@ extension WelcomeViewController: Subviewable {
         textView.isSelectable = false
         
         titleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
+        craftLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
+        officeLabel.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
         
         profileImageView.contentMode = .scaleAspectFill
         profileImageView.clipsToBounds = true
@@ -61,6 +78,8 @@ extension WelcomeViewController: Subviewable {
     func setupStyles() {
         titleLabel.style(with: .title1, alignment: .center)
         textView.style(with: .footnote)
+        craftLabel.style(with: .subheadline, alignment: .center)
+        officeLabel.style(with: .subheadline, alignment: .center)
     }
     
     func setupHierarchy() {
@@ -104,8 +123,8 @@ extension WelcomeViewController: Subviewable {
             textView.bottom == button.top + 12
         }
         constrain(continueButton, view) { continueButton, view in
-            continueButton.left == view.leftMargin
-            continueButton.right == view.rightMargin
+            continueButton.left == view.safeAreaLayoutGuide.leftMargin + 20
+            continueButton.right == view.safeAreaLayoutGuide.rightMargin - 20
             continueButton.bottom == view.safeAreaLayoutGuide.bottomMargin - 20
             continueButton.height == 50
         }

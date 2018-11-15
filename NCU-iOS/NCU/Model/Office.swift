@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Office: String, CaseIterable, Decodable, Encodable { // Available on hibob?
+enum Office: String, CaseIterable, Codable { // Available on hibob?
     case barcelona = "Barcelona"
     case berlin = "Berlin"
     case london = "London"

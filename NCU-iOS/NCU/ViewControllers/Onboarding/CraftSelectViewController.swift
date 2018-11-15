@@ -28,23 +28,40 @@ class CraftSelectViewController: OnboardingViewController {
         
         continueButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
-                self?.selectedCraft()
+                self?.selectedCrafts()
             }).disposed(by: disposeBag)
         
         tableView.rx.itemSelected
             .subscribe(onNext: { [weak self] indexPath in
                 if let cell = self?.tableView.cellForRow(at: indexPath) {
+                    
+                    if let user  = User.get() {
+                        
+                        let craft = Craft.allCases[indexPath.row]
+                        
+                        if user.crafts.contains(craft) {
+                            user.crafts.removeAll(where: { predicate -> Bool in
+                                return predicate == craft
+                            })
+                        } else {
+                            user.crafts.append(craft)
+                        }
+                        user.store()
+                    }
+                    
                     cell.accessoryType = cell.accessoryType == .checkmark ? .none : .checkmark
                 }
             })
             .disposed(by: disposeBag)
     }
     
-    func selectedCraft() {
-        User.get()?.hasSeenOnboarding = true
+    func selectedCrafts() {
+//        User.get()?.hasSeenOnboarding = true
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.setRootWithFade(to: HomeViewController())
+        navigationController?.pushViewController(WelcomeViewController(), animated: true)
+        
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        appDelegate.setRootWithFade(to: HomeViewController())
     }
     
     override func setupSubviews() {

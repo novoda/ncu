@@ -18,23 +18,23 @@ final class User: Codable {
     let familyName: String
     let email: String
     
-    var office: Office? { // Temporary
-        get {
-            return UserDefaultsStore.retrieve(from: userID + "_office")
-        }
-        set {
-            UserDefaultsStore.store(encodableData: newValue, to: userID + "_office")
-        }
-    }
+    var office: Office?// { // Temporary
+//        get {
+//            return UserDefaultsStore.retrieve(from: userID + "_office")
+//        }
+//        set {
+//            UserDefaultsStore.store(encodableData: newValue, to: userID + "_office")
+//        }
+//    }
     
-    var craft: Craft? { // Temporary
-        get {
-            return UserDefaultsStore.retrieve(from: userID + "_craft")
-        }
-        set {
-            UserDefaultsStore.store(encodableData: newValue, to: userID + "_craft")
-        }
-    }
+    var crafts: [Craft] = []// { // Temporary
+//        get {
+//            return UserDefaultsStore.retrieve(from: userID + "_craft")
+//        }
+//        set {
+//            UserDefaultsStore.store(encodableData: newValue, to: userID + "_craft")
+//        }
+//    }
     
     var hasSeenOnboarding: Bool {
         get {
@@ -45,7 +45,7 @@ final class User: Codable {
         }
     }
     
-    init(userID: String, idToken: String, fullName: String, givenName: String, familyName: String, email: String, office: Office? = nil) {
+    init(userID: String, idToken: String, fullName: String, givenName: String, familyName: String, email: String, office: Office? = nil, crafts: [Craft] = []) {
         self.userID = userID
         self.idToken = idToken
         self.fullName = fullName
@@ -56,27 +56,11 @@ final class User: Codable {
     }
     
     func store() { // This is until we know what data we need/where to store
-        do {
-            let encodedData = try JSONEncoder().encode(self)
-            UserDefaults.standard.set(encodedData, forKey: "userData")
-        } catch {
-            debugPrint("Failed to encode user data! \(error.localizedDescription)")
-        }
+        UserDefaultsStore.store(encodableData: self, to: "userData")
     }
     
     static func get() -> User? {
-        
-        guard let userData = UserDefaults.standard.value(forKey: "userData") as? Data else {
-            debugPrint("Failed to retrieve User from UserDefaults")
-            return nil
-        }
-        
-        do {
-            return try JSONDecoder().decode(User.self, from: userData)
-        } catch {
-            debugPrint("Failed to decode/retrieve user data! \(error.localizedDescription)")
-        }
-        return nil
+        return UserDefaultsStore.retrieve(from: "userData")
     }
 }
 

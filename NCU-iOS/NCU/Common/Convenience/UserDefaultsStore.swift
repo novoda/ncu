@@ -9,7 +9,7 @@
 import Foundation
 
 final class UserDefaultsStore {
-    
+    /** T must be Encodable, note that in Swift 4.2, Enums are not Encodable on their own */
     static func store<T: Encodable>(encodableData: T?, to key: String) {
         guard let data = encodableData else { return }
         do {

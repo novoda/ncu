@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Craft: String, CaseIterable, Decodable, Encodable { // Available on hibob?
+enum Craft: String, CaseIterable, Codable { // Available on hibob?
     case androidCraftmanship = "Android Craftmanship"
     case iOSCraftmanship = "iOS Craftmanship"
     case qa = "QA"
