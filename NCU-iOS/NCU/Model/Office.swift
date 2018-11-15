@@ -13,4 +13,5 @@ enum Office: String, CaseIterable, Codable { // Available on hibob?
     case berlin = "Berlin"
     case london = "London"
     case liverpool = "Liverpool"
+    case remote = "Remote Worker"
 }

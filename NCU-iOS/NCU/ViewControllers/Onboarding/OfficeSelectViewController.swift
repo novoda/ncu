@@ -14,8 +14,6 @@ import RxCocoa
 
 final class OfficeSelectViewController: OnboardingViewController { // Should be part of a pageViewController maybe?
     
-    private let remoteWorkerButton = UIButton()
-    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -26,11 +24,6 @@ final class OfficeSelectViewController: OnboardingViewController { // Should be 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "officeCell")
         
         setup()
-        
-        remoteWorkerButton.rx.tap
-            .subscribe(onNext: { [weak self] _ in
-                self?.selectedOffice()
-            }).disposed(by: disposeBag)
     }
     
     func selectedOffice() {
@@ -74,16 +67,5 @@ extension OfficeSelectViewController: UITableViewDataSource {
         cell.textLabel?.text = Office.allCases[indexPath.row].rawValue
 //        cell.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        remoteWorkerButton.setTitle("I'm a remote worker", for: .normal)
-        remoteWorkerButton.backgroundColor = UIColor(named: "baseColor")
-        remoteWorkerButton.layer.cornerRadius = 8
-        return remoteWorkerButton
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 50 // UITableView.automaticDimension
     }
 }
