@@ -35,7 +35,7 @@ class CraftSelectViewController: OnboardingViewController {
             .subscribe(onNext: { [weak self] indexPath in
                 if let cell = self?.tableView.cellForRow(at: indexPath) {
                     
-                    if let user  = User.get() {
+                    if let user = User.get() {
                         
                         let craft = Craft.allCases[indexPath.row]
                         
