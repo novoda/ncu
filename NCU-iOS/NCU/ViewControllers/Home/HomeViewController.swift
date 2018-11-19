@@ -36,7 +36,8 @@ final class HomeViewController: UIViewController {
             .subscribe(onNext: { _ in
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 appDelegate.logoutGID()
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
     }
 }
 

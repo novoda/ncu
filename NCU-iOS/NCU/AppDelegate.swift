@@ -26,6 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func setRootWithFade(to viewController: UIViewController) {
+        guard let window = window else { return }
+        UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
+            self.window?.rootViewController = viewController
+        }, completion: nil)
+    }
+    
+    func setupAppearance() {
+        UILabel.appearance().style()
+    }
 }
 
 extension AppDelegate: GIDSignInDelegate {
@@ -82,12 +93,5 @@ extension AppDelegate: GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         print("Did disconnect user : \(error.localizedDescription)")
-    }
-    
-    func setRootWithFade(to viewController: UIViewController) {
-        guard let window = window else { return }
-        UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
-            self.window?.rootViewController = viewController
-        }, completion: nil)
     }
 }

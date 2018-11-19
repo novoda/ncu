@@ -29,7 +29,8 @@ class CraftSelectViewController: OnboardingViewController {
         continueButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
                 self?.selectedCrafts()
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
         
         tableView.rx.itemSelected
             .subscribe(onNext: { [weak self] indexPath in

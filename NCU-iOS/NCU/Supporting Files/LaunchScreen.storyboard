@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rs6-zM-TiU">
-                                <rect key="frame" x="93.666666666666686" y="312.33333333333331" width="187.66666666666663" height="187.33333333333331"/>
+                                <rect key="frame" x="93.666666666666671" y="312.33333333333331" width="187.66666666666663" height="187.33333333333331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rs6-zM-TiU" secondAttribute="height" multiplier="1:1" id="PpB-JW-htK"/>
                                 </constraints>
