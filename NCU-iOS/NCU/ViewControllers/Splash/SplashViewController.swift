@@ -13,7 +13,7 @@ import GoogleSignIn
 
 final class SplashViewController: UIViewController, GIDSignInUIDelegate {
     
-    let imageView = UIImageView(image: UIImage(named: "appLogo"))
+    private let imageView = UIImageView(image: UIImage(named: "appLogo"))
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -32,18 +32,21 @@ final class WelcomeViewController: UIViewController {
         
         if let user = User.get() {
             titleLabel.text = "Welcome \(user.givenName)!"
-            
             craftLabel.text = user.crafts.map { $0.rawValue }.joined(separator: ", ")
-            
             officeLabel.text = "\(user.office?.rawValue ?? "")"
         }
         
+        bindContinueButton()
+    }
+    
+    private func bindContinueButton() {
         continueButton.rx.tap
             .subscribe(onNext: { _ in
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 appDelegate.setRootWithFade(to: HomeViewController())
                 User.get()?.hasSeenOnboarding = true
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
     }
 }
 
