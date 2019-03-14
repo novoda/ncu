@@ -5,13 +5,17 @@ Management at Novoda is based on producing in others what you expect from yourse
 
 The benefits Novoda gets by building a culture of engagement are: Increased Productivity, Greater Retention and Lower Costs. The benefits individuals get are: Work Satisfaction, Friendly Inspiring Colleagues, and Fair Recogniton & Compensation. You as a manager have a huge role in bringing about these goals.
 
-A miserable job is different from bad one. Bad or good depends upon who you are and what you value and enjoy. A miserable job is one that you dread going to and can’t wait to leave. Management at Novoda is all about getting people to enjoy their journey through Novoda. To have enthusiasm for their work, to always be curious and to achieve something great together.
+Management at Novoda is all about getting people to enjoy their journey through Novoda. To have enthusiasm for their work, to always be curious and to achieve something great together. 
 
-Management at Novoda is not about weilding power, getting others to do your bidding or taking kudos for others achievements. To be a successul manager involves servant-leadership, encouraging others to always be better, to listen to people and point out what they are doing right whilst supporting them if they feel they got something wrong.
+> A miserable job is different from bad one. Bad or good depends upon who you are and what you value and enjoy. A miserable job is one that you dread going to and can’t wait to leave. (Patrick M. Lencioni)
+
+To be a successul manager involves servant-leadership, encouraging others to always be better, to listen to people and point out what they are doing right whilst supporting them if they feel they got something wrong.
+
+> Flat hierarchies requires strong leadership
 
 Novoda's hierarchy has been historically very flat, meaning management is never about building a pyramid of power, its about 1on1 conversations, enabling individuals to see where they are and where they are going. To help those around you enjoy the journey and be the best employee they can. 
 
-Management is a very important responsibility, you should be proud to call yourself a Manager and excited about the possibilities of what you can achieve.
+Management is a very important responsibility, you should be proud to call yourself a Manager at Novoda and excited about the possibilities of what you can achieve.
 
 ## Literature
 
@@ -21,6 +25,10 @@ Read both of these:
 
 * **The Truth About Employee Engagement: Addressing the Three Root Causes of Job Misery** by Patrick M. Lencioni
 * **The New One Minute Manager** by Spencer Johnson
+
+Further optional learning:
+
+* **Radical Candor: How to Get What You Want by Saying What You Mean** by Kim Scott
 
 ## Guidelines
 
