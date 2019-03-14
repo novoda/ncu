@@ -11,7 +11,7 @@ Management at Novoda is all about getting people to enjoy their journey through 
 
 To be a successul manager involves servant-leadership, encouraging others to always be better, to listen to people and point out what they are doing right whilst supporting them if they feel they got something wrong.
 
-> Flat hierarchies requires strong leadership
+> Flat hierarchies require strong leadership
 
 Novoda's hierarchy has been historically very flat, meaning management is never about building a pyramid of power, its about 1on1 conversations, enabling individuals to see where they are and where they are going. To help those around you enjoy the journey and be the best employee they can. 
 
@@ -53,7 +53,7 @@ Some guidelines for making the most of feedback and learning in this part of the
 
 ##### 2
 - [ ] Read The New One Minute Manager
-- [ ] Use it's insights to iterate upon your management style 
+- [ ] Use its insights to iterate upon your management style 
 - [ ] Present back to Novoda on the learnings
 
 
