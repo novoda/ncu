@@ -9,13 +9,13 @@ Management at Novoda is all about getting people to enjoy their journey through 
 
 > A miserable job is different from bad one. Bad or good depends upon who you are and what you value and enjoy. A miserable job is one that you dread going to and can’t wait to leave. (Patrick M. Lencioni)
 
-To be a successul manager involves servant-leadership, encouraging others to always be better, to listen to people and point out what they are doing right whilst supporting them if they feel they got something wrong.
+Becoming a successul manager involves servant-leadership, encouraging others to always be better, and actively listening to people. You will need to point out what they are doing right whilst supporting them if they feel they got something wrong.
 
 > Flat hierarchies require strong leadership
 
-Novoda's hierarchy has been historically very flat, meaning management is never about building a pyramid of power, its about 1on1 conversations, enabling individuals to see where they are and where they are going. To help those around you enjoy the journey and be the best employee they can. 
+Novoda's hierarchy has been historically very flat. Management here has never been about building a pyramid of power. We prefer 1on1 conversations, which enable individuals to see where they are and where they are going. We focus on helping those around you to enjoy the journey, and to become the best employee they can.
 
-Management is a very important responsibility, you should be proud to call yourself a Manager at Novoda and excited about the possibilities of what you can achieve.
+Management is a very important responsibility. You should be proud to call yourself a Manager at Novoda and excited about the possibilities of what you can achieve.
 
 ## Literature
 
@@ -39,7 +39,7 @@ Some guidelines for making the most of feedback and learning in this part of the
 * Both books are available as audio as well as written. It's recommended you listen to the audio book to make the most of a commute, but keep a written copy for future reference. 
 * Ensure your Manager or your Reports know what you’re trying to achieve: document your goal as part of your work.
 * Progress should be iterative and well documented: keep sticky notes in the book, or digital notes to reference later
-* You should share back what you learned: you can pick a format between, 1on1 discussions, a Hack & Tell, blog post, kata, or workshop.
+* You should share back what you learned. Pick a format from: 1on1 discussions, a Hack & Tell, blog post, kata, or workshop.
 
 ## Progress log
 
