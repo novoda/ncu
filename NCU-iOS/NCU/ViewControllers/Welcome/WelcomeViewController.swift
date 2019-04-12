@@ -32,18 +32,21 @@ final class WelcomeViewController: UIViewController {
         
         if let user = User.get() {
             titleLabel.text = "Welcome \(user.givenName)!"
-            
             craftLabel.text = user.crafts.map { $0.rawValue }.joined(separator: ", ")
-            
             officeLabel.text = "\(user.office?.rawValue ?? "")"
         }
         
+        bindContinueButton()
+    }
+    
+    private func bindContinueButton() {
         continueButton.rx.tap
             .subscribe(onNext: { _ in
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 appDelegate.setRootWithFade(to: HomeViewController())
                 User.get()?.hasSeenOnboarding = true
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -58,7 +61,17 @@ extension WelcomeViewController: Subviewable {
     func setupSubviews() {
         
         titleLabel.text = "Welcome!"
-        textView.text = "Welcome and congratulations on your admission to the Novoda Craftsmanship University. We are thrilled to have you onboard and look forward to the journey we will take together.\n\nContinuous learning and mentorship are significant parts of Novoda, and we pride ourselves on the quality of the work we provide to our clients and the people that make achieving such a high level of quality possible.\n\nAs a result, Novoda is not just a place to work but also a place to learn, grow, and share the crafts of software development, app design, and project management. In exchange for applying your time and effort to the NCU programme we will commit to your professional growth by providing you with a personalised platform for your continuous learning and improvement.\n\nThe journey of a craftsman is long and never-ending, full of hard work, sweat, and tears but it is also a journey of joy, discovery, knowledge acquisition, and professional growth.\n\nLet’s take it together!"
+        textView.text = """
+        Welcome and congratulations on your admission to the Novoda Craftsmanship University. We are thrilled to have you onboard and look forward to the journey we will take together.
+        
+        Continuous learning and mentorship are significant parts of Novoda, and we pride ourselves on the quality of the work we provide to our clients and the people that make achieving such a high level of quality possible.
+        
+        As a result, Novoda is not just a place to work but also a place to learn, grow, and share the crafts of software development, app design, and project management. In exchange for applying your time and effort to the NCU programme we will commit to your professional growth by providing you with a personalised platform for your continuous learning and improvement.
+        
+        The journey of a craftsman is long and never-ending, full of hard work, sweat, and tears but it is also a journey of joy, discovery, knowledge acquisition, and professional growth.
+        
+        Let’s take it together!
+        """
         
         textView.isEditable = false
         textView.isSelectable = false

@@ -24,10 +24,7 @@ final class OfficeSelectViewController: OnboardingViewController { // Should be 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "officeCell")
         
         setup()
-    }
-    
-    func selectedOffice() {
-        navigationController?.pushViewController(CraftSelectViewController(), animated: true)
+        bindTableView()
     }
     
     override func setupSubviews() {
@@ -37,7 +34,19 @@ final class OfficeSelectViewController: OnboardingViewController { // Should be 
         subtitleLabel.text = "I am working from..."
         
         tableView.delegate = self
-        tableView.dataSource = self
+        tableView.dataSource = nil
+    }
+
+    private func bindTableView() {
+        let data = Observable<[Office]>.just(Office.allCases)
+        
+        data.bind(to: tableView.rx.items(cellIdentifier: "officeCell")) { index, model, cell in
+            cell.textLabel?.text = model.rawValue
+        }.disposed(by: disposeBag)
+    }
+    
+    private func selectedOffice() {
+        navigationController?.pushViewController(CraftSelectViewController(), animated: true)
     }
 }
 
@@ -54,18 +63,5 @@ extension OfficeSelectViewController: UITableViewDelegate {
             user.store()
             selectedOffice()
         }
-    }
-}
-
-extension OfficeSelectViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Office.allCases.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "officeCell", for: indexPath)
-        cell.textLabel?.text = Office.allCases[indexPath.row].rawValue
-//        cell.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
-        return cell
     }
 }

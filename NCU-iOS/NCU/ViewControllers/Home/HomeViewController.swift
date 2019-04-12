@@ -16,7 +16,6 @@ import RxCocoa
 final class HomeViewController: UIViewController {
     
     let welcomeLabel = UILabel()
-    
     let logoutButton = UIButton(type: .custom)
     
     let disposeBag = DisposeBag()
@@ -32,6 +31,10 @@ final class HomeViewController: UIViewController {
             welcomeLabel.text = "\(user.givenName)'s Journey"
         }
         
+        bindLoginButton()
+    }
+
+    private func bindLoginButton() {
         logoutButton.rx.tap
             .subscribe(onNext: { _ in
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
